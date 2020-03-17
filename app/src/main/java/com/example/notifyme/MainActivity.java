@@ -116,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
                 .setContentTitle("You've been notified!")
                 .setContentText("This is your notification text.")
                 .setSmallIcon(R.drawable.ic_android)
+                .setDeleteIntent(notificationPendingIntent)
                 .setContentIntent(notificationPendingIntent)
                 .setAutoCancel(true)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
